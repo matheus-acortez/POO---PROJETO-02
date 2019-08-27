@@ -18,7 +18,7 @@
         <div class="container">
             <nav class="navbar navbar-dark bg-dark navprincipal">
                 <span class="navbar-text mx-auto">
-                    <h3>Cálculo de Amortização  | Projeto 03 - Grupo 05 - Noturno</h3>
+                    <h3>Cálculo de Amortização  | PROJETO 02 - Grupo 05 - Noturno</h3>
                 </span>
             </nav>
             <div class="row">
