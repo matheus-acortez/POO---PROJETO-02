@@ -11,18 +11,23 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
         <title>Cálculo de Amortização</title>
     </head>
     <body>
         <div class="container">
-            <nav class="navbar navbar-dark bg-dark">
-                <span class="navbar-text">
+            <nav class="navbar navbar-dark bg-dark navprincipal">
+                <span class="navbar-text mx-auto">
                     <h3>Cálculo de Amortização  | Projeto 03 - Grupo 05 - Noturno</h3>
                 </span>
             </nav>
             <div class="row">
                 <div class="col-md-12">
-                    
+                   <a class="btn btn-primary" href="#" role="button">HOME</a>
+                   <a class="btn btn-primary" href="#" role="button">AMORTIZAÇÃO AMERICANA</a>
+                   <a class="btn btn-primary" href="#" role="button">AMORTIZAÇÃO CONSTANTE</a>
+                   <a class="btn btn-success" href="#" role="button">TABELA PRICE</a>
+       
                 </div>
             </div>
         </div>
