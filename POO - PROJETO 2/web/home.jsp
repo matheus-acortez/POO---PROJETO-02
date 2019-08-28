@@ -62,12 +62,12 @@
                     <h6>Matheus Cortez</h6>
                 </div>
                 <div class="col-md-2">
-                    <img src="imagens/matheus.jpg" alt="..." class="img-thumbnail img">
-                    <h6>Matheus Cortez</h6>
+                    <img src="imagens/jefferson.jpeg" alt="..." class="img-thumbnail img">
+                    <h6>Jefferson Mariano</h6>
                 </div>
                 <div class="col-md-2">
-                    <img src="imagens/matheus.jpg" alt="..." class="img-thumbnail img">
-                    <h6>Matheus Cortez</h6>
+                    <img src="imagens/romario.jpeg" alt="..." class="img-thumbnail img">
+                    <h6>José Romario</h6>
                 </div>
                 
             </div>
