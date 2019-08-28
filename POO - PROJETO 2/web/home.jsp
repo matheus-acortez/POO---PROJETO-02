@@ -26,7 +26,7 @@
                    <a class="btn btn-primary" href="#" role="button">HOME</a>
                    <a class="btn btn-primary" href="#" role="button">AMORTIZAÇÃO AMERICANA</a>
                    <a class="btn btn-primary" href="#" role="button">AMORTIZAÇÃO CONSTANTE</a>
-                   <a class="btn btn-success" href="#" role="button">TABELA PRICE</a>
+                   <a class="btn btn-primary" href="#" role="button">TABELA PRICE</a>
        
                 </div>
             </div>
@@ -38,7 +38,7 @@
                         </div>
                         <div class="card-body">
                         <p class="card-text">O Sistema Americano de Amortização é um tipo de quitação de empréstimo que favorece aqueles que desejam pagar o valor principal através de uma única parcela, porém os juros devem ser pagos periodicamente ou, dependendo do contrato firmado entre as partes, os juros são capitalizados e pagos junto ao valor principal.</p>
-                        <a href="#" class="btn btn-primary">Calcular</a>
+                        <a href="#" class="btn btn-success">Calcular</a>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                         </div>
                         <div class="card-body">
                         <p class="card-text">O Sistema Americano de Amortização é um tipo de quitação de empréstimo que favorece aqueles que desejam pagar o valor principal através de uma única parcela, porém os juros devem ser pagos periodicamente ou, dependendo do contrato firmado entre as partes, os juros são capitalizados e pagos junto ao valor principal.</p>
-                        <a href="#" class="btn btn-primary">Calcular</a>
+                        <a href="#" class="btn btn-success">Calcular</a>
                         </div>
                     </div>
                 </div>
