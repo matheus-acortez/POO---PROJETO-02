@@ -16,20 +16,8 @@
     </head>
     <body>
         <div class="container">
-            <nav class="navbar navbar-dark bg-dark navprincipal">
-                <span class="navbar-text mx-auto">
-                    <h3>Cálculo de Amortização  | PROJETO 02 - Grupo 05 - Noturno</h3>
-                </span>
-            </nav>
-            <div class="row">
-                <div class="col-md-12">
-                   <a class="btn btn-primary" href="#" role="button">HOME</a>
-                   <a class="btn btn-primary" href="#" role="button">AMORTIZAÇÃO AMERICANA</a>
-                   <a class="btn btn-primary" href="#" role="button">AMORTIZAÇÃO CONSTANTE</a>
-                   <a class="btn btn-primary" href="#" role="button">TABELA PRICE</a>
-       
-                </div>
-            </div>
+            <%@include file="WEB-INF/header.jspf"%>
+            <%@include file="WEB-INF/menu.jspf"%>
             <div class="row amort">
                 <div class="col-md-5">
                     <div class="card">
