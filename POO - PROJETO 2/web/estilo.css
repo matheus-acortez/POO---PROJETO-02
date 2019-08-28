@@ -12,3 +12,13 @@ and open the template in the editor.
     margin-bottom: 10px;
 }
 
+.amort{
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+.img{
+    width: 140px;/* Faz a largura ficar igual a da largura da imagem de exemplo */
+    height: 140px;/* Faz a altura ficar igual a da altura da imagem de exemplo */
+}
+
