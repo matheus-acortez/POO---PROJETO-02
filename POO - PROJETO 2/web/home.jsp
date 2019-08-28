@@ -26,7 +26,7 @@
                         </div>
                         <div class="card-body">
                         <p class="card-text">O Sistema Americano de Amortização é um tipo de quitação de empréstimo que favorece aqueles que desejam pagar o valor principal através de uma única parcela, porém os juros devem ser pagos periodicamente ou, dependendo do contrato firmado entre as partes, os juros são capitalizados e pagos junto ao valor principal.</p>
-                        <a href="#" class="btn btn-success">Calcular</a>
+                        <a href="amortitzacao-americana.jsp" class="btn btn-success">Calcular</a>
                         </div>
                     </div>
                 </div>
@@ -36,8 +36,8 @@
                             <h5>Sistema de Amortização Constante</h5>
                         </div>
                         <div class="card-body">
-                        <p class="card-text">O Sistema Americano de Amortização é um tipo de quitação de empréstimo que favorece aqueles que desejam pagar o valor principal através de uma única parcela, porém os juros devem ser pagos periodicamente ou, dependendo do contrato firmado entre as partes, os juros são capitalizados e pagos junto ao valor principal.</p>
-                        <a href="#" class="btn btn-success">Calcular</a>
+                        <p class="card-text">O atual mercado financeiro oferece variadas operações de crédito para quem deseja financiar carro, imóveis, constituir um negócio próprio, investir na empresa, entre outras opções. As instituições financeiras oferecem um capital que deverá ser devolvido com juros durante o período pré-determinado. As formas de quitar o empréstimo são inúmeras, vamos abordar o funcionamento do sistema de amortizações constantes, que consiste no pagamento da dívida baseada em parcelas de amortizações iguais com prestações e juros decrescentes..</p>
+                        <a href="amortizacao-contante.jsp" class="btn btn-success">Calcular</a>
                         </div>
                     </div>
                 </div>
