@@ -20,7 +20,34 @@
             <%@include file="WEB-INF/menu.jspf"%>
             
             
-            
+        <div class="card">
+            <div class="card-header">
+                Amortização Americana
+            </div>
+            <div class="card-body">
+            <form>
+                <div class="form-group row">
+                  <label for="periodoLabel" class="col-sm-2 col-form-label">Período</label>
+                  <div class="col-sm-3">
+                    <input type="number" name="periodo" class="form-control" id="periodoLabel" placeholder="Período em meses">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="valorLabel" class="col-sm-2 col-form-label">Valor (R$)</label>
+                  <div class="col-sm-3">
+                    <input type="number" name="valor" class="form-control" id="valorLabel" placeholder="Digite o valor.">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="jurosLabel" class="col-sm-2 col-form-label">Juros (%a.m)</label>
+                  <div class="col-sm-3">
+                    <input type="number" name="valor" class="form-control" id="jurosLabel" placeholder="Insira o juros. Ex: 10%">
+                  </div>
+                </div>
+            </form>
+                 <input type="submit" class="btn btn-primary" value="Calcular"</>
+            </div>
+        </div>
             
         </div>
           <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
