@@ -25,6 +25,9 @@
             double periodo = 0;
             double valor = 0;
             double juros = 0;
+            double prestacao = 0;
+            double juros_periodo = 0;
+            double amortizacao = 0;
            
             try {
                 periodo = Double.parseDouble(request.getParameter("periodo"));
@@ -59,23 +62,50 @@
                     <input type="number" name="juros" class="form-control" id="jurosLabel" placeholder="Insira o juros. Ex: 10%">
                   </div>
                 </div>
+                <input class="btn btn-primary" type="submit" value="Calcular">
             </form>
-                 <input type="submit" class="btn btn-primary" value="Calcular"</>
             </div>
-            
             <table class="table table-striped table-dark">
                 <thead>
                   <tr>
                     <th scope="col">Nº Parcelas</th>
                     <th scope="col">Amortização (R$)</th>
                     <th scope="col">Juros (R$)</th>
-                    <th scope="col">Divida (R$)</th>
+                    <th scope="col">Total a pagar (R$)</th>
                   </tr>
                 </thead>
+                <tbody>
+  
+            <%for(int i=1; i<= periodo; i++){%>
+                     
+                              <%
+                                prestacao = valor * juros/100;
+                                juros_periodo = prestacao;
+                              
+                              if(periodo==i){
+                                  
+                                  amortizacao = valor;
+                                  prestacao = 0;
+                              }
+                              
+                              %>
+                      
+                           <tr>
+                      <td> <%=i%></td>
+                      <td> <%= df.format(amortizacao) %> </td>
+                      <td> <%= df.format(juros_periodo) %> </td>
+                      <td> <%= df.format(prestacao) %> </td>
+                      
+                      
+                           </tr>
+                          
+
+                        <%}%>
+        </tbody>
                 
               </table>
 
-
+            
         </div>
             
         </div>
