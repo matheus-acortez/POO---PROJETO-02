@@ -28,10 +28,12 @@
             double prestacao = 0;
             double juros_periodo = 0;
             double amortizacao = 0;
+            double soma_juros = 0;
+            double valor_pagar = 0;
            
             try {
-                periodo = Double.parseDouble(request.getParameter("periodo"));
                 valor = Double.parseDouble(request.getParameter("valor"));
+                periodo = Double.parseDouble(request.getParameter("periodo"));
                 juros = Double.parseDouble(request.getParameter("juros"));
                 
             } catch (Exception e) {
@@ -45,15 +47,15 @@
             <div class="card-body">
             <form>
                 <div class="form-group row">
-                  <label for="periodoLabel" class="col-sm-2 col-form-label">Período</label>
+                  <label for="periodoLabel" class="col-sm-2 col-form-label">Valor</label>
                   <div class="col-sm-3">
-                    <input type="number" name="periodo" class="form-control" id="periodoLabel" placeholder="Período em meses">
+                    <input type="number" name="valor" class="form-control" id="periodoLabel" placeholder="(R$)">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="valorLabel" class="col-sm-2 col-form-label">Valor (R$)</label>
+                  <label for="valorLabel" class="col-sm-2 col-form-label">Período</label>
                   <div class="col-sm-3">
-                    <input type="number" name="valor" class="form-control" id="valorLabel" placeholder="Digite o valor.">
+                    <input type="number" name="periodo" class="form-control" id="valorLabel" placeholder="Periodo em meses">
                   </div>
                 </div>
                 <div class="form-group row">
@@ -78,34 +80,39 @@
   
             <%for(int i=1; i<= periodo; i++){%>
                      
-                              <%
-                                prestacao = valor * juros/100;
-                                juros_periodo = prestacao;
+                 <%
+                   prestacao = valor * juros/100;
+                   juros_periodo = prestacao;
+                   soma_juros += juros_periodo;
                               
-                              if(periodo==i){
+                   if(periodo==i){
                                   
-                                  amortizacao = valor;
-                                  prestacao = 0;
-                              }
+                      amortizacao = valor;
+                      prestacao = 0;
+                      valor_pagar = soma_juros + valor;
+                   }
                               
-                              %>
+                 %>
                       
-                           <tr>
-                      <td> <%=i%></td>
-                      <td> <%= df.format(amortizacao) %> </td>
-                      <td> <%= df.format(juros_periodo) %> </td>
-                      <td> <%= df.format(prestacao) %> </td>
-                      
-                      
-                           </tr>
-                          
-
-                        <%}%>
-        </tbody>
-                
+                   <tr>
+                       <td> <%=i%></td>
+                       <td> <%= df.format(amortizacao) %> </td>
+                       <td> <%= df.format(juros_periodo) %> </td>
+                       <td> <%= df.format(prestacao) %> </td>
+                   </tr>
+                 <%}%>
+                 </tbody>          
               </table>
-
-            
+              <div class="row">
+                <div class="col-md-2">
+                    <h4>Total de juros</h4>
+                    <h4 style="color: #ff0000">R$ <%= df.format(soma_juros) %> </h4>
+                </div>
+                <div class="col-md-2">
+                    <h4>Valor a pagar</h4>
+                    <h4 style="color: #ff0000">R$ <%= df.format(valor_pagar) %> </h4>
+                </div>
+              </div>
         </div>
             
         </div>
