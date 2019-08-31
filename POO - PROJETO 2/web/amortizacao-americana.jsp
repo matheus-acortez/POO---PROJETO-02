@@ -4,6 +4,7 @@
     Author     : cortez
 --%>
 
+<%@page import="java.text.DecimalFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,7 +19,21 @@
         <div class="container">
             <%@include file="WEB-INF/header.jspf"%>
             <%@include file="WEB-INF/menu.jspf"%>
-            
+        
+         <%
+            DecimalFormat df = new DecimalFormat("#.##");
+            double periodo = 0;
+            double valor = 0;
+            double juros = 0;
+           
+            try {
+                periodo = Double.parseDouble(request.getParameter("periodo"));
+                valor = Double.parseDouble(request.getParameter("valor"));
+                juros = Double.parseDouble(request.getParameter("juros"));
+                
+            } catch (Exception e) {
+            }
+        %>
             
         <div class="card">
             <div class="card-header">
@@ -41,12 +56,26 @@
                 <div class="form-group row">
                   <label for="jurosLabel" class="col-sm-2 col-form-label">Juros (%a.m)</label>
                   <div class="col-sm-3">
-                    <input type="number" name="valor" class="form-control" id="jurosLabel" placeholder="Insira o juros. Ex: 10%">
+                    <input type="number" name="juros" class="form-control" id="jurosLabel" placeholder="Insira o juros. Ex: 10%">
                   </div>
                 </div>
             </form>
                  <input type="submit" class="btn btn-primary" value="Calcular"</>
             </div>
+            
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Nº Parcelas</th>
+                    <th scope="col">Amortização (R$)</th>
+                    <th scope="col">Juros (R$)</th>
+                    <th scope="col">Divida (R$)</th>
+                  </tr>
+                </thead>
+                
+              </table>
+
+
         </div>
             
         </div>
