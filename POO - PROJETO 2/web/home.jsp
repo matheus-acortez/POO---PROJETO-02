@@ -23,7 +23,6 @@
                     <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <h5 class="mb-0 text-secondary">Método Americano de Amortização</h5>
                     </div>
-
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                             <p class="card-text">O Sistema Americano de Amortização é um tipo de quitação de empréstimo que favorece 

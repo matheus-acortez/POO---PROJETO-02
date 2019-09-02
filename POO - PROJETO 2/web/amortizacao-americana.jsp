@@ -92,7 +92,7 @@
                       valor_pagar = soma_juros + valor;
                    }
                               
-                 %>
+            %>
                       
                    <tr>
                        <td> <%=i%></td>
